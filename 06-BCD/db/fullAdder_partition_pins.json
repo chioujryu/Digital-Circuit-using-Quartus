@@ -4,6 +4,22 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "ten_Y0",
+					"strict" : false
+				},
+				{
+					"name" : "ten_Y1",
+					"strict" : false
+				},
+				{
+					"name" : "ten_Y2",
+					"strict" : false
+				},
+				{
+					"name" : "ten_Y3",
+					"strict" : false
+				},
+				{
 					"name" : "Y0",
 					"strict" : false
 				},
@@ -20,7 +36,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "digit_1",
+					"name" : "A1",
+					"strict" : false
+				},
+				{
+					"name" : "B1",
 					"strict" : false
 				},
 				{
@@ -32,18 +52,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "C",
-					"strict" : false
-				},
-				{
-					"name" : "B1",
-					"strict" : false
-				},
-				{
-					"name" : "A1",
-					"strict" : false
-				},
-				{
 					"name" : "A2",
 					"strict" : false
 				},
@@ -52,11 +60,43 @@
 					"strict" : false
 				},
 				{
+					"name" : "B3",
+					"strict" : false
+				},
+				{
 					"name" : "A3",
 					"strict" : false
 				},
 				{
-					"name" : "B3",
+					"name" : "tenA0",
+					"strict" : false
+				},
+				{
+					"name" : "tenB0",
+					"strict" : false
+				},
+				{
+					"name" : "tenA1",
+					"strict" : false
+				},
+				{
+					"name" : "tenB1",
+					"strict" : false
+				},
+				{
+					"name" : "tenA2",
+					"strict" : false
+				},
+				{
+					"name" : "tenB2",
+					"strict" : false
+				},
+				{
+					"name" : "tenA3",
+					"strict" : false
+				},
+				{
+					"name" : "tenB3",
 					"strict" : false
 				}
 			]

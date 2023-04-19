@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Apr 19 17:42:53 2023
+Analysis & Synthesis Status : Successful - Wed Apr 19 18:38:48 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : fullAdder
-Top-level Entity Name : BCD_digit
+Top-level Entity Name : BCD_ten_digit
 Family : MAX 10
-Total logic elements : 11
-    Total combinational functions : 11
+Total logic elements : 21
+    Total combinational functions : 21
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 14
+Total pins : 24
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

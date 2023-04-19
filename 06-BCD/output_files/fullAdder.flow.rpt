@@ -1,5 +1,5 @@
 Flow report for fullAdder
-Wed Apr 19 17:45:35 2023
+Wed Apr 19 18:48:00 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Apr 19 17:45:35 2023       ;
+; Flow Status                        ; Successful - Wed Apr 19 18:48:00 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; fullAdder                                   ;
-; Top-level Entity Name              ; BCD_digit                                   ;
+; Top-level Entity Name              ; BCD_ten_digit                               ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 12 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 12 / 49,760 ( < 1 % )                       ;
+; Total logic elements               ; 22 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 22 / 49,760 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 0 / 49,760 ( 0 % )                          ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 14 / 360 ( 4 % )                            ;
+; Total pins                         ; 24 / 360 ( 7 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -66,26 +66,26 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/19/2023 17:42:46 ;
+; Start date & time ; 04/19/2023 18:38:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; fullAdder           ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 5311881706270.168189736506572          ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; BCD_digit   ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; BCD_digit   ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; BCD_digit   ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; BCD_digit                              ; fullAdder     ; --          ; --         ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                          ;
++-------------------------------------+----------------------------------------+---------------+---------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+---------------+------------+
+; COMPILER_SIGNATURE_ID               ; 5311881706270.168190072008596          ; --            ; --            ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --            ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --            ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; BCD_ten_digit ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; BCD_ten_digit ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; BCD_ten_digit ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --         ;
+; TOP_LEVEL_ENTITY                    ; BCD_ten_digit                          ; fullAdder     ; --            ; --         ;
++-------------------------------------+----------------------------------------+---------------+---------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -93,19 +93,19 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4763 MB             ; 00:00:17                           ;
-; Fitter               ; 00:00:05     ; 1.0                     ; 5757 MB             ; 00:00:08                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4760 MB             ; 00:00:17                           ;
+; Fitter               ; 00:00:07     ; 1.0                     ; 5764 MB             ; 00:00:09                           ;
 ; Assembler            ; 00:00:02     ; 1.0                     ; 4677 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4835 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4835 MB             ; 00:00:03                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4622 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4622 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4622 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4622 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4622 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:37                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4622 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:39                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -136,13 +136,13 @@ quartus_map --read_settings_files=on --write_settings_files=off fullAdder -c ful
 quartus_fit --read_settings_files=off --write_settings_files=off fullAdder -c fullAdder
 quartus_asm --read_settings_files=off --write_settings_files=off fullAdder -c fullAdder
 quartus_sta fullAdder -c fullAdder
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/Waveform1.vwf --testbench_file=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/Waveform.vwf --testbench_file=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/Waveform.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/BCDtenDigit.vwf --testbench_file=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/modelsim/BCDtenDigit.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/BCDtenDigit.vwf --testbench_file=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/BCDtenDigit.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/ fullAdder -c fullAdder
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/Waveform1.vwf --testbench_file=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/BCDtenDigit.vwf --testbench_file=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/BCDtenDigit.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/ fullAdder -c fullAdder
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/Waveform1.vwf --testbench_file=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/ fullAdder -c fullAdder
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/Waveform1.vwf --testbench_file=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/BCDtenDigit.vwf --testbench_file=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/BCDtenDigit.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/ fullAdder -c fullAdder
 
 

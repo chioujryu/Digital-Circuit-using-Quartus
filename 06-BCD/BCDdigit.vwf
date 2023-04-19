@@ -1,12 +1,12 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source="C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/Waveform1.vwf" --testbench_file="C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/Waveform1.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source="C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/Waveform1.vwf" --testbench_file="C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/Waveform1.vwf.vt"</ttestbench_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source="C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/BCDdigit.vwf" --testbench_file="C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/BCDdigit.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off fullAdder -c fullAdder --vector_source="C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/BCDdigit.vwf" --testbench_file="C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/BCDdigit.vwf.vt"</ttestbench_cmd>
 <fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/" fullAdder -c fullAdder</fnetlist_cmd>
 <tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/user/Documents/Digital-Circuit-using-Quartus/06-BCD/simulation/qsim/" fullAdder -c fullAdder</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work fullAdder.vo
-vlog -work work Waveform1.vwf.vt
+vlog -work work BCDdigit.vwf.vt
 vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.BCD_digit_vlg_vec_tst
 vcd file -direction fullAdder.msim.vcd
 vcd add -internal BCD_digit_vlg_vec_tst/*
@@ -24,7 +24,7 @@ quit -f
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vlog -work work fullAdder.vo
-vlog -work work Waveform1.vwf.vt
+vlog -work work BCDdigit.vwf.vt
 vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.BCD_digit_vlg_vec_tst
 vcd file -direction fullAdder.msim.vcd
 vcd add -internal BCD_digit_vlg_vec_tst/*
@@ -215,12 +215,12 @@ SIGNAL("Y3")
 	PARENT = "";
 }
 
-GROUP("a")
+GROUP("numberA")
 {
 	MEMBERS = "A3", "A2", "A1", "A0";
 }
 
-GROUP("b")
+GROUP("numberB")
 {
 	MEMBERS = "B3", "B2", "B1", "B0";
 }
@@ -424,8 +424,8 @@ TRANSITION_LIST("Y3")
 
 DISPLAY_LINE
 {
-	CHANNEL = "a";
-	EXPAND_STATUS = COLLAPSED;
+	CHANNEL = "numberA";
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
@@ -474,8 +474,8 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "b";
-	EXPAND_STATUS = COLLAPSED;
+	CHANNEL = "numberB";
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 0;
@@ -543,7 +543,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "output";
-	EXPAND_STATUS = COLLAPSED;
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 0;
