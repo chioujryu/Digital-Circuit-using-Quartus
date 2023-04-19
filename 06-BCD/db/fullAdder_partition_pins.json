@@ -36,6 +36,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "tenDigit",
+					"strict" : false
+				},
+				{
+					"name" : "digit",
+					"strict" : false
+				},
+				{
 					"name" : "A1",
 					"strict" : false
 				},

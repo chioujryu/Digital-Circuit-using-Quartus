@@ -1,6 +1,6 @@
-// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Copyright (C) 2023  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
-// and other software and tools, and its AMPP partner logic 
+// and other software and tools, and any partner logic 
 // functions, and any output files from any of the foregoing 
 // (including device programming or simulation files), and any 
 // associated documentation or information are expressly subject 
@@ -10,7 +10,8 @@
 // agreement, including, without limitation, that your use is for
 // the sole purpose of programming logic devices manufactured by
 // Intel and sold by Intel or its authorized distributors.  Please
-// refer to the applicable agreement for further details.
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
 
 // *****************************************************************************
 // This file contains a Verilog test bench with test vectors .The test vectors  
@@ -18,15 +19,15 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/19/2023 17:41:45"
+// Generated on "04/19/2023 20:15:15"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          fullAdder_4bit
+// Verilog Test Bench (with test vectors) for design :                          BCD_ten_digit
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module fullAdder_4bit_vlg_vec_tst();
+module BCD_ten_digit_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg A0;
@@ -37,16 +38,28 @@ reg B0;
 reg B1;
 reg B2;
 reg B3;
-reg Cp;
+reg tenA0;
+reg tenA1;
+reg tenA2;
+reg tenA3;
+reg tenB0;
+reg tenB1;
+reg tenB2;
+reg tenB3;
 // wires                                               
-wire Cn;
+wire digit;
+wire ten_Y0;
+wire ten_Y1;
+wire ten_Y2;
+wire ten_Y3;
+wire tenDigit;
 wire Y0;
 wire Y1;
 wire Y2;
 wire Y3;
 
 // assign statements (if any)                          
-fullAdder_4bit i1 (
+BCD_ten_digit i1 (
 // port map - connection between master ports and signals/registers   
 	.A0(A0),
 	.A1(A1),
@@ -56,8 +69,20 @@ fullAdder_4bit i1 (
 	.B1(B1),
 	.B2(B2),
 	.B3(B3),
-	.Cn(Cn),
-	.Cp(Cp),
+	.digit(digit),
+	.ten_Y0(ten_Y0),
+	.ten_Y1(ten_Y1),
+	.ten_Y2(ten_Y2),
+	.ten_Y3(ten_Y3),
+	.tenA0(tenA0),
+	.tenA1(tenA1),
+	.tenA2(tenA2),
+	.tenA3(tenA3),
+	.tenB0(tenB0),
+	.tenB1(tenB1),
+	.tenB2(tenB2),
+	.tenB3(tenB3),
+	.tenDigit(tenDigit),
 	.Y0(Y0),
 	.Y1(Y1),
 	.Y2(Y2),
@@ -68,82 +93,100 @@ begin
 #1000000 $finish;
 end 
 
-// A3
+// A0
 initial
 begin
-	A3 = 1'b0;
-	A3 = #400000 1'b1;
-	A3 = #400000 1'b0;
+	A0 = 1'b0;
+end 
+
+// A1
+initial
+begin
+	A1 = 1'b0;
 end 
 
 // A2
 initial
 begin
-	repeat(2)
-	begin
-		A2 = 1'b0;
-		A2 = #200000 1'b1;
-		# 200000;
-	end
 	A2 = 1'b0;
 end 
 
-// A1
-always
+// A3
+initial
 begin
-	A1 = 1'b0;
-	A1 = #100000 1'b1;
-	#100000;
+	A3 = 1'b0;
 end 
 
-// A0
-always
+// B0
+initial
 begin
-	A0 = 1'b0;
-	A0 = #50000 1'b1;
-	#50000;
+	B0 = 1'b0;
+end 
+
+// B1
+initial
+begin
+	B1 = 1'b0;
+end 
+
+// B2
+initial
+begin
+	B2 = 1'b0;
 end 
 
 // B3
 initial
 begin
 	B3 = 1'b0;
-	B3 = #400000 1'b1;
-	B3 = #400000 1'b0;
 end 
 
-// B2
+// tenA0
 initial
 begin
-	repeat(2)
-	begin
-		B2 = 1'b0;
-		B2 = #200000 1'b1;
-		# 200000;
-	end
-	B2 = 1'b0;
+	tenA0 = 1'b0;
 end 
 
-// B1
-always
-begin
-	B1 = 1'b0;
-	B1 = #100000 1'b1;
-	#100000;
-end 
-
-// B0
-always
-begin
-	B0 = 1'b0;
-	B0 = #50000 1'b1;
-	#50000;
-end 
-
-// Cp
+// tenA1
 initial
 begin
-	Cp = 1'b0;
+	tenA1 = 1'b0;
+end 
+
+// tenA2
+initial
+begin
+	tenA2 = 1'b0;
+end 
+
+// tenA3
+initial
+begin
+	tenA3 = 1'b0;
+end 
+
+// tenB0
+initial
+begin
+	tenB0 = 1'b0;
+end 
+
+// tenB1
+initial
+begin
+	tenB1 = 1'b0;
+end 
+
+// tenB2
+initial
+begin
+	tenB2 = 1'b0;
+end 
+
+// tenB3
+initial
+begin
+	tenB3 = 1'b0;
 end 
 endmodule
 

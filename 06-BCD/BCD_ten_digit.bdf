@@ -4,9 +4,9 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -16,14 +16,15 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 */
 (header "graphic" (version "1.4"))
 (pin
 	(input)
 	(rect 1408 -88 1424 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "A0" (rect -1 5 16 18)(font "Intel Clear" )(vertical))
+	(text "A0" (rect -1 5 16 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -40,7 +41,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1448 -88 1464 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "A1" (rect -1 5 16 18)(font "Intel Clear" )(vertical))
+	(text "A1" (rect -1 5 16 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -57,7 +58,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1488 -88 1504 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "A2" (rect -1 5 16 18)(font "Intel Clear" )(vertical))
+	(text "A2" (rect -1 5 16 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -74,7 +75,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1528 -88 1544 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "A3" (rect 5 5 17 18)(font "Arial" )(vertical))
+	(text "A3" (rect 5 5 17 17)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -91,7 +92,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1568 -88 1584 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "B0" (rect -1 5 16 18)(font "Intel Clear" )(vertical))
+	(text "B0" (rect -1 5 16 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -108,7 +109,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1608 -88 1624 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "B1" (rect -1 5 16 18)(font "Intel Clear" )(vertical))
+	(text "B1" (rect -1 5 16 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -125,7 +126,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1648 -88 1664 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "B2" (rect -1 5 16 18)(font "Intel Clear" )(vertical))
+	(text "B2" (rect -1 5 16 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -142,7 +143,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1688 -88 1704 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "B3" (rect -1 5 16 18)(font "Intel Clear" )(vertical))
+	(text "B3" (rect -1 5 16 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -159,7 +160,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 888 -88 904 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "tenA0" (rect -1 5 16 34)(font "Intel Clear" )(vertical))
+	(text "tenA0" (rect -1 5 16 33)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -176,7 +177,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 928 -88 944 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "tenA1" (rect -1 5 16 34)(font "Intel Clear" )(vertical))
+	(text "tenA1" (rect -1 5 16 33)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -193,7 +194,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 968 -88 984 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "tenA2" (rect -1 5 16 34)(font "Intel Clear" )(vertical))
+	(text "tenA2" (rect -1 5 16 33)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -210,7 +211,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1008 -88 1024 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "tenA3" (rect 3 5 20 34)(font "Intel Clear" )(vertical))
+	(text "tenA3" (rect 3 5 20 33)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -227,7 +228,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1048 -88 1064 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "tenB0" (rect -1 5 16 34)(font "Intel Clear" )(vertical))
+	(text "tenB0" (rect -1 5 16 33)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -244,7 +245,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1088 -88 1104 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "tenB1" (rect 0 5 17 34)(font "Intel Clear" )(vertical))
+	(text "tenB1" (rect 0 5 17 33)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -261,7 +262,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1128 -88 1144 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "tenB2" (rect 0 5 17 34)(font "Intel Clear" )(vertical))
+	(text "tenB2" (rect 0 5 17 33)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -278,7 +279,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1168 -88 1184 80)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "tenB3" (rect -1 5 16 34)(font "Intel Clear" )(vertical))
+	(text "tenB3" (rect -1 5 16 33)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -295,7 +296,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 312 176 488 192)
 	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
-	(text "ten_Y0" (rect 5 -1 40 16)(font "Intel Clear" ))
+	(text "ten_Y0" (rect 5 -1 39 16)(font "Intel Clear" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -312,7 +313,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 312 192 488 208)
 	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
-	(text "ten_Y1" (rect 5 -1 40 16)(font "Intel Clear" ))
+	(text "ten_Y1" (rect 5 -1 39 16)(font "Intel Clear" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -329,7 +330,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 312 208 488 224)
 	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
-	(text "ten_Y2" (rect 5 -1 40 16)(font "Intel Clear" ))
+	(text "ten_Y2" (rect 5 -1 39 16)(font "Intel Clear" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -346,7 +347,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 312 224 488 240)
 	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
-	(text "ten_Y3" (rect 5 -1 40 16)(font "Intel Clear" ))
+	(text "ten_Y3" (rect 5 -1 39 16)(font "Intel Clear" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -380,7 +381,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 720 520 896 536)
 	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
-	(text "Y1" (rect 5 -1 18 16)(font "Intel Clear" ))
+	(text "Y1" (rect 5 -1 17 16)(font "Intel Clear" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -397,7 +398,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 720 536 896 552)
 	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
-	(text "Y2" (rect 5 -1 18 16)(font "Intel Clear" ))
+	(text "Y2" (rect 5 -1 17 16)(font "Intel Clear" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -414,7 +415,41 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 720 552 896 568)
 	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
-	(text "Y3" (rect 5 -1 18 16)(font "Intel Clear" ))
+	(text "Y3" (rect 5 -1 17 16)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 4)(pt 124 12))
+		(line (pt 98 12)(pt 94 8))
+		(line (pt 94 8)(pt 98 4))
+		(line (pt 98 4)(pt 94 8))
+	)
+	(rotate180)
+)
+(pin
+	(output)
+	(rect 312 240 488 256)
+	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
+	(text "tenDigit" (rect 5 -1 42 16)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 4)(pt 124 12))
+		(line (pt 98 12)(pt 94 8))
+		(line (pt 94 8)(pt 98 4))
+		(line (pt 98 4)(pt 94 8))
+	)
+	(rotate180)
+)
+(pin
+	(output)
+	(rect 648 672 824 688)
+	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
+	(text "digit" (rect 5 -1 26 16)(font "Intel Clear" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -678,10 +713,6 @@ refer to the applicable agreement for further details.
 	(pt 696 312)
 )
 (connector
-	(pt 928 576)
-	(pt 696 576)
-)
-(connector
 	(pt 696 312)
 	(pt 696 576)
 )
@@ -917,6 +948,26 @@ refer to the applicable agreement for further details.
 	(pt 1176 296)
 	(pt 1176 392)
 )
+(connector
+	(pt 488 248)
+	(pt 512 248)
+)
+(connector
+	(pt 824 680)
+	(pt 880 680)
+)
+(connector
+	(pt 880 680)
+	(pt 880 576)
+)
+(connector
+	(pt 928 576)
+	(pt 880 576)
+)
+(connector
+	(pt 880 576)
+	(pt 696 576)
+)
 (junction (pt 1080 512))
 (junction (pt 1120 528))
 (junction (pt 1160 544))
@@ -933,3 +984,4 @@ refer to the applicable agreement for further details.
 (junction (pt 1096 264))
 (junction (pt 1136 280))
 (junction (pt 1176 296))
+(junction (pt 880 576))

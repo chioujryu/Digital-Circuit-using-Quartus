@@ -23,6 +23,8 @@ Y0 <= BCD_digit:inst.Y0
 Y1 <= BCD_digit:inst.Y1
 Y2 <= BCD_digit:inst.Y2
 Y3 <= BCD_digit:inst.Y3
+tenDigit <= BCD_digit:inst10.digit_1
+digit <= BCD_digit:inst.digit_1
 
 
 |BCD_ten_digit|BCD_digit:inst10

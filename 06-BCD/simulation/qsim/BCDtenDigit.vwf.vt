@@ -1,6 +1,6 @@
-// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Copyright (C) 2023  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
-// and other software and tools, and its AMPP partner logic 
+// and other software and tools, and any partner logic 
 // functions, and any output files from any of the foregoing 
 // (including device programming or simulation files), and any 
 // associated documentation or information are expressly subject 
@@ -10,7 +10,8 @@
 // agreement, including, without limitation, that your use is for
 // the sole purpose of programming logic devices manufactured by
 // Intel and sold by Intel or its authorized distributors.  Please
-// refer to the applicable agreement for further details.
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
 
 // *****************************************************************************
 // This file contains a Verilog test bench with test vectors .The test vectors  
@@ -18,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/19/2023 18:47:59"
+// Generated on "04/19/2023 20:14:26"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          BCD_ten_digit
 // 
@@ -46,10 +47,12 @@ reg tenB1;
 reg tenB2;
 reg tenB3;
 // wires                                               
+wire digit;
 wire ten_Y0;
 wire ten_Y1;
 wire ten_Y2;
 wire ten_Y3;
+wire tenDigit;
 wire Y0;
 wire Y1;
 wire Y2;
@@ -66,6 +69,7 @@ BCD_ten_digit i1 (
 	.B1(B1),
 	.B2(B2),
 	.B3(B3),
+	.digit(digit),
 	.ten_Y0(ten_Y0),
 	.ten_Y1(ten_Y1),
 	.ten_Y2(ten_Y2),
@@ -78,6 +82,7 @@ BCD_ten_digit i1 (
 	.tenB1(tenB1),
 	.tenB2(tenB2),
 	.tenB3(tenB3),
+	.tenDigit(tenDigit),
 	.Y0(Y0),
 	.Y1(Y1),
 	.Y2(Y2),
@@ -92,144 +97,96 @@ end
 initial
 begin
 	tenA3 = 1'b0;
-	tenA3 = #400000 1'b1;
-	tenA3 = #400000 1'b0;
 end 
 
 // tenA2
 initial
 begin
-	repeat(2)
-	begin
-		tenA2 = 1'b0;
-		tenA2 = #200000 1'b1;
-		# 200000;
-	end
 	tenA2 = 1'b0;
 end 
 
 // tenA1
-always
+initial
 begin
 	tenA1 = 1'b0;
-	tenA1 = #100000 1'b1;
-	#100000;
 end 
 
 // tenA0
-always
+initial
 begin
 	tenA0 = 1'b0;
-	tenA0 = #50000 1'b1;
-	#50000;
 end 
 
 // tenB3
 initial
 begin
 	tenB3 = 1'b0;
-	tenB3 = #400000 1'b1;
-	tenB3 = #400000 1'b0;
 end 
 
 // tenB2
 initial
 begin
-	repeat(2)
-	begin
-		tenB2 = 1'b0;
-		tenB2 = #200000 1'b1;
-		# 200000;
-	end
 	tenB2 = 1'b0;
 end 
 
 // tenB1
-always
+initial
 begin
 	tenB1 = 1'b0;
-	tenB1 = #100000 1'b1;
-	#100000;
 end 
 
 // tenB0
-always
+initial
 begin
 	tenB0 = 1'b0;
-	tenB0 = #50000 1'b1;
-	#50000;
 end 
 
 // A3
 initial
 begin
 	A3 = 1'b0;
-	A3 = #400000 1'b1;
-	A3 = #400000 1'b0;
 end 
 
 // A2
 initial
 begin
-	repeat(2)
-	begin
-		A2 = 1'b0;
-		A2 = #200000 1'b1;
-		# 200000;
-	end
 	A2 = 1'b0;
 end 
 
 // A1
-always
+initial
 begin
 	A1 = 1'b0;
-	A1 = #100000 1'b1;
-	#100000;
 end 
 
 // A0
-always
+initial
 begin
 	A0 = 1'b0;
-	A0 = #50000 1'b1;
-	#50000;
 end 
 
 // B3
 initial
 begin
 	B3 = 1'b0;
-	B3 = #400000 1'b1;
-	B3 = #400000 1'b0;
 end 
 
 // B2
 initial
 begin
-	repeat(2)
-	begin
-		B2 = 1'b0;
-		B2 = #200000 1'b1;
-		# 200000;
-	end
 	B2 = 1'b0;
 end 
 
 // B1
-always
+initial
 begin
 	B1 = 1'b0;
-	B1 = #100000 1'b1;
-	#100000;
 end 
 
 // B0
-always
+initial
 begin
 	B0 = 1'b0;
-	B0 = #50000 1'b1;
-	#50000;
 end 
 endmodule
 
