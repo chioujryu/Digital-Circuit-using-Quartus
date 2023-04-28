@@ -1,0 +1,21 @@
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+
+Entity Counter4B is
+	Port( CL, PulseIn: in std_logic;
+			Q: out std_logic_vector(3 downto 0));
+End Counter4B;
+
+Architecture Bhv of Counter4B is
+	signal tmp: std_logic_vector(3 downto 0);
+	begin
+		process (CL, PulseIn)
+		begin
+			if (CL=’1′) then
+				tmp <= "0000";
+			elsif (PulseIn’event and PulseIn=’1′) then
+				tmp <= tmp + 1;
+			end if;
+		end process;
+		Q <= tmp;
+	end Bhv;
