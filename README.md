@@ -17,7 +17,7 @@
 
 # 使用硬體
 Altera DE10實驗板，型號為 10M50DAF484C7G
-![FPGA](assets\terasic-t-core-zestaw-rozwojowy-z-ukladem-fpga-intel-max-10.jpg)
+![FPGA](assets/terasic-t-core-zestaw-rozwojowy-z-ukladem-fpga-intel-max-10.jpg)
 
 
 # Resources
