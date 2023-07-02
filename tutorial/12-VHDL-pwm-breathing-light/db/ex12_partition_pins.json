@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "br_o_op",
+					"strict" : false
+				},
+				{
+					"name" : "br_i_clk",
+					"strict" : false
+				},
+				{
+					"name" : "br_i_rstn",
+					"strict" : false
+				},
+				{
+					"name" : "br_i_enable",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,117 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cnt_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pwm_out",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "period_i[1]",
+					"strict" : false
+				},
+				{
+					"name" : "period_i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "period_i[3]",
+					"strict" : false
+				},
+				{
+					"name" : "period_i[2]",
+					"strict" : false
+				},
+				{
+					"name" : "period_i[5]",
+					"strict" : false
+				},
+				{
+					"name" : "period_i[4]",
+					"strict" : false
+				},
+				{
+					"name" : "period_i[7]",
+					"strict" : false
+				},
+				{
+					"name" : "period_i[6]",
+					"strict" : false
+				},
+				{
+					"name" : "offt_i[1]",
+					"strict" : false
+				},
+				{
+					"name" : "offt_i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "offt_i[3]",
+					"strict" : false
+				},
+				{
+					"name" : "offt_i[2]",
+					"strict" : false
+				},
+				{
+					"name" : "offt_i[5]",
+					"strict" : false
+				},
+				{
+					"name" : "offt_i[4]",
+					"strict" : false
+				},
+				{
+					"name" : "offt_i[7]",
+					"strict" : false
+				},
+				{
+					"name" : "offt_i[6]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

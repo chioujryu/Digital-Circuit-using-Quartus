@@ -1,0 +1,339 @@
+$comment
+	File created using the following command:
+		vcd file EX09.msim.vcd -direction
+$end
+$date
+	Wed May 18 18:18:48 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module moore_ex_vhd_vec_tst $end
+$var wire 1 ! Ck $end
+$var wire 1 " Input $end
+$var wire 1 # Output $end
+$var wire 1 $ P [1] $end
+$var wire 1 % P [0] $end
+
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var wire 1 ) devoe $end
+$var wire 1 * devclrn $end
+$var wire 1 + devpor $end
+$var wire 1 , ww_devoe $end
+$var wire 1 - ww_devclrn $end
+$var wire 1 . ww_devpor $end
+$var wire 1 / ww_Input $end
+$var wire 1 0 ww_Ck $end
+$var wire 1 1 ww_P [1] $end
+$var wire 1 2 ww_P [0] $end
+$var wire 1 3 ww_Output $end
+$var wire 1 4 \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [4] $end
+$var wire 1 5 \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [3] $end
+$var wire 1 6 \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [2] $end
+$var wire 1 7 \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [1] $end
+$var wire 1 8 \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [0] $end
+$var wire 1 9 \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [4] $end
+$var wire 1 : \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [3] $end
+$var wire 1 ; \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [2] $end
+$var wire 1 < \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [1] $end
+$var wire 1 = \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [0] $end
+$var wire 1 > \Ck~inputclkctrl_INCLK_bus\ [3] $end
+$var wire 1 ? \Ck~inputclkctrl_INCLK_bus\ [2] $end
+$var wire 1 @ \Ck~inputclkctrl_INCLK_bus\ [1] $end
+$var wire 1 A \Ck~inputclkctrl_INCLK_bus\ [0] $end
+$var wire 1 B \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 C \~QUARTUS_CREATED_UNVM~~busy\ $end
+$var wire 1 D \~QUARTUS_CREATED_ADC1~~eoc\ $end
+$var wire 1 E \~QUARTUS_CREATED_ADC2~~eoc\ $end
+$var wire 1 F \P[0]~output_o\ $end
+$var wire 1 G \P[1]~output_o\ $end
+$var wire 1 H \Output~output_o\ $end
+$var wire 1 I \Ck~input_o\ $end
+$var wire 1 J \Ck~inputclkctrl_outclk\ $end
+$var wire 1 K \Input~input_o\ $end
+$var wire 1 L \ph1[0]~feeder_combout\ $end
+$var wire 1 M \Mux2~0_combout\ $end
+$var wire 1 N \ph1[1]~feeder_combout\ $end
+$var wire 1 O \Mux3~0_combout\ $end
+$var wire 1 P \P[0]~reg0_q\ $end
+$var wire 1 Q \P[1]~reg0_q\ $end
+$var wire 1 R \Mux3~1_combout\ $end
+$var wire 1 S \Output~reg0_q\ $end
+$var wire 1 T ph1 [1] $end
+$var wire 1 U ph1 [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+0&
+1'
+x(
+1)
+1*
+1+
+1,
+1-
+1.
+1/
+00
+03
+0B
+zC
+zD
+zE
+0F
+0G
+0H
+0I
+0J
+1K
+1L
+0M
+0N
+1O
+0P
+0Q
+0R
+0S
+01
+02
+0T
+0U
+1>
+1?
+1@
+0A
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0$
+0%
+$end
+#50000
+1!
+10
+1I
+1A
+1J
+1U
+1P
+1F
+12
+1%
+#100000
+0!
+0"
+00
+0/
+0K
+0I
+0A
+1M
+0O
+0L
+1N
+0J
+#150000
+1!
+1"
+10
+1/
+1K
+1I
+1A
+0M
+1O
+1L
+0N
+1J
+#200000
+0!
+00
+0I
+0A
+0J
+#250000
+1!
+10
+1I
+1A
+1J
+#300000
+0!
+00
+0I
+0A
+0J
+#350000
+1!
+10
+1I
+1A
+1J
+#400000
+0!
+0"
+00
+0/
+0K
+0I
+0A
+1M
+0O
+0L
+1N
+0J
+#450000
+1!
+10
+1I
+1A
+1J
+0U
+1T
+0P
+1Q
+1G
+0F
+0M
+11
+02
+0N
+0%
+1$
+#500000
+0!
+00
+0I
+0A
+0J
+#550000
+1!
+1"
+10
+1/
+1K
+1I
+1A
+1M
+1O
+1L
+1N
+1J
+1U
+1P
+1F
+0M
+0O
+1R
+12
+0L
+0N
+1%
+#600000
+0!
+0"
+00
+0/
+0K
+0I
+0A
+1M
+1O
+1L
+1N
+0J
+#650000
+1!
+10
+1I
+1A
+1J
+1S
+1H
+13
+1#
+#700000
+0!
+00
+0I
+0A
+0J
+#750000
+1!
+1"
+10
+1/
+1K
+1I
+1A
+0M
+0O
+0L
+0N
+1J
+0U
+0T
+0P
+0Q
+0G
+0F
+1O
+0R
+01
+02
+1L
+0%
+0$
+#800000
+0!
+00
+0I
+0A
+0J
+#850000
+1!
+10
+1I
+1A
+1J
+1U
+1P
+0S
+0H
+1F
+03
+12
+0#
+1%
+#900000
+0!
+00
+0I
+0A
+0J
+#950000
+1!
+10
+1I
+1A
+1J
+#1000000

@@ -1,0 +1,33 @@
+|Debouncing
+Din => DFF1:De:1:Ui.D
+CK => DFF1:De:1:Ui.CK
+CK => DFF1:De:2:Ui.CK
+CK => DFF1:De:3:Ui.CK
+CK => DFF1:De:4:Ui.CK
+Dout << Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Debouncing|DFF1:\De:1:Ui
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Debouncing|DFF1:\De:2:Ui
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Debouncing|DFF1:\De:3:Ui
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Debouncing|DFF1:\De:4:Ui
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

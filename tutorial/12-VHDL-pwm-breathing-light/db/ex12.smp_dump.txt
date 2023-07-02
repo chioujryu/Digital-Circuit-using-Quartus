@@ -1,0 +1,14 @@
+
+State Machine - |breathing|r_curr_state
+Name r_curr_state.x4 r_curr_state.x3 r_curr_state.x2 r_curr_state.x1 r_curr_state.x0 
+r_curr_state.x0 0 0 0 0 0 
+r_curr_state.x1 0 0 0 1 1 
+r_curr_state.x2 0 0 1 0 1 
+r_curr_state.x3 0 1 0 0 1 
+r_curr_state.x4 1 0 0 0 1 
+
+State Machine - |breathing|pwmc:u0|r_curr_state
+Name r_curr_state.x2 r_curr_state.x1 r_curr_state.x0 
+r_curr_state.x0 0 0 0 
+r_curr_state.x1 0 1 1 
+r_curr_state.x2 1 0 1 

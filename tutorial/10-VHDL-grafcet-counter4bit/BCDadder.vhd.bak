@@ -1,0 +1,45 @@
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+Use IEEE.std_logic_unsigned.all;
+
+Entity BCDadder is
+	Port(A,B:in integer range 0 to 99;
+			Y2,Y1,Y0:out std_logic_vector(3 downto 0));
+End BCDadder;
+
+Architecture ARCH of BCDadder is
+Begin
+	Process(A,B)
+		Variable Sum:integer range 0 to 200;
+		Variable Output:std_logic_vector(3 downto 0);
+		Variable TMP:integer range 0 to 9;
+	Begin
+		Sum := A+B;
+		TMP := Sum rem 10;
+		Dig0: For I in 0 to 3 Loop
+			If ((TMP mod 2)=1 Then Output(I):= '1';
+			Else Output(I):= '0';
+			End If;
+			TMP := TMP/2;
+		End Loop;
+		Y0 <= Outpot;
+------------------------------
+		TMP := (Sum/10) rem 10;
+		Dig1: For I in 0 to 3 Loop
+			If ((TMP mod 2)=1 Then Output(I):= '1';
+			Else Output(I):= '0';
+			End If;
+			TMP := TMP/2;
+		End Loop;
+		Y1 <= Outpot;
+------------------------------
+		TMP := Sum/100;
+		Dig2: For I in 0 to 3 Loop
+			If ((TMP mod 2)=1 Then Output(I):= '1';
+			Else Output(I):= '0';
+			End If;
+			TMP := TMP/2;
+		End Loop;
+		Y2 <= Outpot;
+	End Process;
+End ARCH;

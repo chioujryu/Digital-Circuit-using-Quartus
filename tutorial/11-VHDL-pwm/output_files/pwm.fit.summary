@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sun Jul 02 01:46:13 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : pwm
+Top-level Entity Name : pwm
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 26 / 49,760 ( < 1 % )
+    Total combinational functions : 26 / 49,760 ( < 1 % )
+    Dedicated logic registers : 12 / 49,760 ( < 1 % )
+Total registers : 12
+Total pins : 27 / 360 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

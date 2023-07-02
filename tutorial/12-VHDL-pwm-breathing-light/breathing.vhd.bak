@@ -1,0 +1,132 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity breathing is 
+    generic(
+        lg_dw : integer := 8;
+        dcnt_dw : integer := 16
+        );
+    port(
+        br_i_clk        :in std_logic;
+        br_i_rstn     :in std_logic;
+        br_i_enable :in std_logic;
+        br_o_op        :out std_logic);
+end entity breathing;
+
+architecture rtl of breathing is
+
+    component pwmc is
+    generic(
+        p_dw : integer := 8
+        );
+    port(
+        pwmc_i_clk        :in std_logic;
+        pwmc_i_rstn        :in std_logic;
+        pwmc_i_enable    :in std_logic;
+        pwmc_i_offt        :in std_logic_vector((p_dw-1) downto 0);
+        pwmc_i_period    :in std_logic_vector((p_dw-1) downto 0);
+        pwmc_o_pwmop    :out std_logic);
+    end component pwmc;
+    
+    type grafcet is (x0, x1, x2, x3, x4);
+    signal w_next_state : grafcet;
+    signal r_curr_state : grafcet;
+    
+    signal w_dcnt : std_logic_vector((dcnt_dw-1) downto 0);
+    signal r_dcnt : std_logic_vector((dcnt_dw-1) downto 0);
+    signal w_lg : std_logic_vector((lg_dw-1) downto 0);
+    signal r_lg : std_logic_vector((lg_dw-1) downto 0);
+    
+begin
+
+    gstate: process(br_i_clk, br_i_rstn)
+    begin
+        if br_i_rstn = '0' then
+            r_curr_state <= x0;
+        elsif rising_edge(br_i_clk) then
+            r_curr_state <= w_next_state;
+        end if;
+    end process;
+	 control_path: process(r_curr_state, br_i_enable, r_dcnt, r_lg)
+    begin
+        case r_curr_state is
+            when x0 =>
+                if br_i_enable = '1' then
+                    w_next_state <= x1;
+                else
+                    w_next_state <= x0;
+                end if;
+            when x1 =>
+                if r_dcnt = X"FE" then
+                    w_next_state <= x2;
+                else
+                    w_next_state <= x1;
+                end if;
+            when x2 =>
+                if r_lg = X"F" then
+                    w_next_state <= x3;
+                else 
+                    w_next_state <= x1;
+                end if;
+            when x3 =>
+                if r_dcnt = X"FE" then
+                    w_next_state <= x4;
+                else
+                    w_next_state <= x3;
+                end if;
+            when x4 =>
+                if r_lg = X"01" and br_i_enable = '1' then
+                    w_next_state <= x1;
+                elsif r_lg = X"01" and br_i_enable = '0' then
+                    w_next_state <= x0;
+                else
+                    w_next_state <= x3;
+                end if;
+        end case;
+    end process;
+    
+    data_path: process(r_curr_state, r_dcnt, r_lg)
+    begin
+        case r_curr_state is 
+            when x0 =>
+                w_dcnt <= (others => '0');
+                w_lg <= (others => '0');
+            when x1 =>
+                w_dcnt <= r_dcnt + '1';
+                w_lg <= r_lg;
+            when x2 =>
+                w_dcnt <= (others => '0');
+                w_lg <= r_lg + '1';
+            when x3 =>
+                w_dcnt <= r_dcnt + '1';
+                w_lg <= r_lg;
+            when x4 =>
+                w_dcnt <= (others => '0');
+                w_lg <= r_lg - '1';
+        end case;
+    end process;
+	 outbuf_path: process(br_i_clk, br_i_rstn)
+    begin
+        if br_i_rstn = '0' then
+            r_dcnt <= (others => '0');
+            r_lg <= (others => '0');
+        elsif rising_edge(br_i_clk) then
+            r_dcnt <= w_dcnt;
+            r_lg <= w_lg;
+        end if;
+    end process;
+    
+    u0: pwmc
+    generic map(
+        p_dw => lg_dw
+        )
+    port map(
+        pwmc_i_clk        => br_i_clk,
+        pwmc_i_rstn        => br_i_rstn,
+        pwmc_i_enable    => br_i_enable,
+        pwmc_i_offt        => r_lg,
+        pwmc_i_period    => X"FF",
+        pwmc_o_pwmop    => br_o_op);
+        
+end rtl;

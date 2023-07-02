@@ -1,0 +1,9 @@
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+
+Entity Decoder3_8 is
+	Port ( EN : in std_logic;
+			 A  : in std_logic_vector(2 downto 0);
+			 Y  :out std_logic_vector(7 downto 0));
+End Decoder 3_8;
+

@@ -5,16 +5,24 @@
 # Install
  Component | Description |
 | ---- | --- |
-| [**Quartus**](https://www.intel.com.tw/content/www/tw/zh/products/details/fpga/development-tools/quartus-prime/resource.html) | 精簡版是Quartus Prime的免費版本，能夠免費下載 
+| [**Quartus**](https://www.intel.com.tw/content/www/tw/zh/products/details/fpga/development-tools/quartus-prime/resource.html) | 精簡版是Quartus Prime的免費版本，能夠免費下載 。
+
+**注意**：建議安裝 18.1 的版本，因為 18 版之後的 Quartus 的 simulation 波形圖需要 license。
 
 # 安裝Quartus Prime流程
-* [安裝USB-Blaster Driver注意事項(v18.1)](https://chih-hao.synology.me/wordpress/?p=354) [>](assets\installQuartus\installQuartus.md)
-* [安裝Quartus Prime流程與注意事項(v18.1)](https://chih-hao.synology.me/wordpress/?p=350)
+* [安裝USB-Blaster Driver注意事項(v18.1)](https://wp.chih-hao.synology.me/?p=354) [>](assets\installQuartus\installQuartus.md)
+* [安裝Quartus Prime流程與注意事項(v18.1)](https://wp.chih-hao.synology.me/?p=350)
+
+**注意**：安裝18.1版是因為要使用免費的 simulation 波形圖。因為 18 版之後的 Quartus 的 simulation 波形圖需要 license。
+
+# 使用硬體
+Altera DE10實驗板
+![FPGA](assets\145793188.png)
 
 # Resources
 之後補上
 
-# Cours
+# Course
 之後補上
 
 # 檔名介紹
@@ -23,3 +31,6 @@
 | **bsf** | 專案檔 |
 | **bdf** | 個別檔 |
 | **vwf** | 波形圖 |
+
+# Reference
+中央大學 資訊工程系 張志豪

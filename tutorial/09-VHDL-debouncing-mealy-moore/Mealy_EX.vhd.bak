@@ -1,0 +1,62 @@
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+
+Entity Mealy_EX is
+	Port(Input,Ck: in std_logic;
+			Phase  : integer range 0 to 9;
+			Output : out std_logic);
+End Mealy_EX;
+
+Architecture ARCH of Mealy_EX is
+Begin
+	Process(CK)
+		Variable ph: integer range 0 to 9 := 0; --record phase
+	Begin
+	case ph is
+		when 0 =>                           --phase 0 
+			if(Input = '1') Then
+				ph := 1;
+				Output <= '0';
+			End if;
+			
+			if(Input = '0') Then
+				ph := 3;
+				Output <= '0';
+			End if;	
+		
+		when 1 =>                             --phase 1 
+			if(Input = '1') Then
+				ph := 2;
+				Output <= '1';
+			End if;
+			
+			if(Input = '0') Then
+				ph := 1;
+				Output <= '0';
+			End if;
+		
+		when 2 =>                            --phase 2 
+			if(Input = '1') Then
+				ph := 3;
+				Output <= '0';
+			End if;
+			
+			if(Input = '0') Then
+				ph := 1;
+				Output <= '0';
+			End if;
+		
+		when 3 =>                             --phase 3 
+			if(Input = '1') Then
+				ph := 0;
+				Output <= '1';
+			End if;
+			
+			if(Input = '0') Then
+				ph := 1;
+				Output <= '0';
+			End if;
+	End case;
+	End Process;
+End ARCH;
+		
