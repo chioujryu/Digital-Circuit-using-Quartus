@@ -16,8 +16,9 @@
 **注意**：安裝18.1版是因為要使用免費的 simulation 波形圖。因為 18 版之後的 Quartus 的 simulation 波形圖需要 license。
 
 # 使用硬體
-Altera DE10實驗板
-![FPGA](assets\145793188.png)
+Altera DE10實驗板，型號為 10M50DAF484C7G
+![FPGA](assets\terasic-t-core-zestaw-rozwojowy-z-ukladem-fpga-intel-max-10.jpg)
+
 
 # Resources
 之後補上
@@ -32,5 +33,7 @@ Altera DE10實驗板
 | **bdf** | 個別檔 |
 | **vwf** | 波形圖 |
 
-# Reference
-中央大學 資訊工程系 張志豪
+# Acknowlege
+謝謝 **中央大學 資訊工程系 張志豪博士** 準備這些課程，能讓中央大學的學生受益良多。
+
+張志豪博士的 Email 為 h63016402@gmail.com
