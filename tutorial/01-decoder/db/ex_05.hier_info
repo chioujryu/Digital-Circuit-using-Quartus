@@ -1,0 +1,34 @@
+|ex_05
+Q0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+C => inst.IN0
+C => inst9.IN0
+C => inst10.IN0
+C => inst11.IN0
+C => inst12.IN0
+B => inst3.IN0
+B => inst7.IN1
+B => inst8.IN1
+B => inst11.IN1
+B => inst12.IN1
+A => inst4.IN0
+A => inst6.IN2
+A => inst8.IN2
+A => inst10.IN2
+A => inst12.IN2
+en => inst5.IN3
+en => inst6.IN3
+en => inst7.IN3
+en => inst8.IN3
+en => inst9.IN3
+en => inst10.IN3
+en => inst11.IN3
+en => inst12.IN3
+Q1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Q4 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q5 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q6 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q7 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
